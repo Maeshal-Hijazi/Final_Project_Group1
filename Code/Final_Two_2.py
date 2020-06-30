@@ -13,7 +13,7 @@ df = df.fillna(df.mean().round(3))  # Filling missing cells with their column av
 X = df.iloc[:, 0:1].values  # All input features
 
 x1 = df.iloc[:, 0].values  # Runtime (Minutes)
-x2 = df.iloc[:, 1].values  # Vote
+x2 = df.iloc[:, 1].values  # Metascore
 y = df.iloc[:, -1].values  # Output: Rating
 
 plt.scatter(x1, y)
